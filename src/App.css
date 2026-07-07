@@ -1,0 +1,162 @@
+/* src/App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    background-color: #f3f4f6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.card h2 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.item-tarefa {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.texto-tarefa {
+    flex: 1;
+    /* Faz o texto ocupar o espaço restante, empurrando os botões */
+    cursor: pointer;
+    /* Transforma o mouse em mãozinha ao passar por cima do texto */
+    user-select: none;
+    /* Evita que o texto fique azul/selecionado ao dar duplo clique */
+}
+
+.tarefa-concluida {
+    text-decoration: line-through;
+    /* Cria o risco no meio do texto */
+    color: #9ca3af;
+    /* Deixa o texto com uma cor cinza apagada */
+}
+
+.campo-texto {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.campo-texto:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* BOTÃO PRINCIPAL (ADICIONAR / SALVAR) */
+.botao-principal {
+    padding: 10px 16px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-left: 10px;
+}
+
+.botao-principal:hover {
+    background-color: #2563eb;
+}
+
+/* BOTÃO CANCELAR */
+.botao-cancelar {
+    margin-top: 10px;
+    /* Cria um espaço com a linha de cima */
+    margin-left: 0;
+    /* Zera a margem esquerda antiga */
+    padding: 10px 16px;
+    background-color: #e5e7eb;
+    color: #374151;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+    /* Ocupa a largura total da caixinha */
+    text-align: center;
+}
+
+.botao-cancelar:hover {
+    background-color: #d1d5db;
+}
+
+/* BOTÕES DE AÇÃO (EDITAR E EXCLUIR) */
+.botao-editar,
+.botao-excluir {
+    background: none;
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 2px 4px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.botao-editar {
+    color: #3b82f6;
+    border: 1px solid #3b82f6;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.botao-editar:hover {
+    background-color: #eff6ff;
+}
+
+.botao-excluir {
+    color: #ef4444;
+    border: 1px solid #ef4444;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.botao-excluir:hover {
+    background-color: #fef2f2;
+}
