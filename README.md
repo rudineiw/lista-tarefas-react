@@ -2,7 +2,7 @@
 
 Este é um projeto de **Lista de Tarefas (To-Do List)** simples e intuitivo, desenvolvido em React utilizando o ecossistema rápido do Vite. 
 Objetivo: adicionar, editar, excluir e marcar tarefas como concluídas ou não.
-
+Curso: Dev Fullstack 2026 +PraTi & Codifica.
 ---
 
 ## 🚀 Funcionalidades
