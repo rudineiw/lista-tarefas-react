@@ -28,10 +28,10 @@ O projeto oferece todas as operações essenciais de um CRUD de tarefas:
 
 ## 📦 Estrutura de Arquivos Principal
 
-- [App.jsx](file:///c:/Users/Rudinei/OneDrive/WEB-DEV/dev-fullstack-2026/lista-tarefas-react/src/App.jsx): Contém a lógica principal da aplicação, funções de manipulação de estado (`adicionar`, `excluir`, `editar`, `concluir`) e renderização dos elementos HTML.
-- [App.css](file:///c:/Users/Rudinei/OneDrive/WEB-DEV/dev-fullstack-2026/lista-tarefas-react/src/App.css): Arquivo de estilização global e específica para o layout da aplicação.
-- [main.jsx](file:///c:/Users/Rudinei/OneDrive/WEB-DEV/dev-fullstack-2026/lista-tarefas-react/src/main.jsx): Ponto de entrada que monta a aplicação React no DOM.
-- [index.html](file:///c:/Users/Rudinei/OneDrive/WEB-DEV/dev-fullstack-2026/lista-tarefas-react/index.html): Arquivo HTML base onde o React é injetado.
+- [App.jsx](./src/App.jsx): Contém a lógica principal da aplicação, funções de manipulação de estado (`adicionar`, `excluir`, `editar`, `concluir`) e renderização dos elementos HTML.
+- [App.css](./src/App.css): Arquivo de estilização global e específica para o layout da aplicação.
+- [main.jsx](./src/main.jsx): Ponto de entrada que monta a aplicação React no DOM.
+- [index.html](./index.html): Arquivo HTML base onde o React é injetado.
 
 ---
 
