@@ -18,7 +18,7 @@ export default function App() {
 
     // ---> FUNÇÃO EXCLUIR
     const excluirTarefa = (idParaExcluir) => {
-        // Filtra a lista: "Deixe ficar todo mundo que tiver o ID DIFERENTE do que eu quero apagar"
+        // Filtra a lista: "Deixe ficar todos que tiver o ID DIFERENTE do que eu quero apagar"
         const listaAtualizada = tarefas.filter((tarefa) => tarefa.id !== idParaExcluir);
 
         // Se excluir a tarefa que estava sendo editada, limpa a edição
