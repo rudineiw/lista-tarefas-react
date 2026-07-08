@@ -7,6 +7,7 @@ export default function App() {
         { id: 1, texto: "Aprender sobre Props", concluida: true },
         { id: 2, texto: "Entender useState", concluida: false },
         { id: 3, texto: "Estudar Web Components", concluida: false },
+        { id: 4, texto: "Fazer exercícios React", concluida: false },
     ]);
 
     // Guarda o texto do input. Começa vazio ("")
