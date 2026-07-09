@@ -63,12 +63,12 @@ export default function App() {
     };
 
     // ---> FUNÇÃO ALTERNAR CONCLUÍDA
-    const alternarConcluida = (idParaAlternar) => {
+    const concluirTarefa = (idConcluir) => {
         // O .map vai passar por todas as tarefas. 
         // Se achar o ID clicado, ele inverte o valor de 'concluida' (se tava true vira false, se tava false vira true).
         // Se for outro ID, ele deixa a tarefa idêntica.
         const listaAtualizada = tarefas.map((tarefa) =>
-            tarefa.id === idParaAlternar ? { ...tarefa, concluida: !tarefa.concluida } : tarefa
+            tarefa.id === idConcluir ? { ...tarefa, concluida: !tarefa.concluida } : tarefa
         );
 
         setTarefas(listaAtualizada);
@@ -82,7 +82,7 @@ export default function App() {
                 <ul>
                     {tarefas.map((tarefa) => (
                         <li key={tarefa.id} className="item-tarefa">
-                            <span onClick={() => alternarConcluida(tarefa.id)} className={`texto-tarefa ${tarefa.concluida ? "tarefa-concluida" : ""}`}>{tarefa.texto}</span>
+                            <span onClick={() => concluirTarefa(tarefa.id)} className={`texto-tarefa ${tarefa.concluida ? "tarefa-concluida" : ""}`}>{tarefa.texto}</span>
                             <button onClick={() => prepararEdicao(tarefa)} className="botao-editar">Editar</button>
                             <button onClick={() => excluirTarefa(tarefa.id)} className="botao-excluir">Excluir</button>
                         </li>
