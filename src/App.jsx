@@ -76,57 +76,28 @@ export default function App() {
 
     return (
         <div className="container">
-
             <div className="card">
-
                 <h2>Lista de Tarefas</h2>
-
                 {/* LISTA DE TAREFAS */}
                 <ul>
                     {tarefas.map((tarefa) => (
                         <li key={tarefa.id} className="item-tarefa">
-                            <span
-                                onClick={() => alternarConcluida(tarefa.id)}
-                                className={`texto-tarefa ${tarefa.concluida ? "tarefa-concluida" : ""}`}
-                            >
-                                {tarefa.texto}
-                            </span>
-                            <button onClick={() => prepararEdicao(tarefa)} className="botao-editar">
-                                Editar
-                            </button>
-                            <button onClick={() => excluirTarefa(tarefa.id)} className="botao-excluir">
-                                Excluir
-                            </button>
+                            <span onClick={() => alternarConcluida(tarefa.id)} className={`texto-tarefa ${tarefa.concluida ? "tarefa-concluida" : ""}`}>{tarefa.texto}</span>
+                            <button onClick={() => prepararEdicao(tarefa)} className="botao-editar">Editar</button>
+                            <button onClick={() => excluirTarefa(tarefa.id)} className="botao-excluir">Excluir</button>
                         </li>
                     ))}
                 </ul>
 
                 {/* FORMULÁRIO DE CADASTRO/EDIÇÃO */}
                 <div className="formulario">
-                    <input
-                        type="text"
-                        placeholder="Nova tarefa..."
-                        value={textoDigitado}
-                        onChange={(e) => setTextoDigitado(e.target.value)}
-                        className="campo-texto"
-                    />
-
-                    <button onClick={salvarTarefa} className="botao-principal">
-                        {idEmEdicao !== null ? "Salvar" : "Adicionar"}
-                    </button>
-
+                    <input type="text" placeholder="Nova tarefa..." value={textoDigitado} onChange={(e) => setTextoDigitado(e.target.value)} className="campo-texto"/>
+                    <button onClick={salvarTarefa} className="botao-principal">{idEmEdicao !== null ? "Salvar" : "Adicionar"}</button>
                     {idEmEdicao !== null && (
-                        <button
-                            onClick={() => { setIdEmEdicao(null); setTextoDigitado(""); }}
-                            className="botao-cancelar"
-                        >
-                            Cancelar
-                        </button>
+                        <button onClick={() => { setIdEmEdicao(null); setTextoDigitado(""); }} className="botao-cancelar">Cancelar</button>
                     )}
                 </div>
-
             </div>
-
         </div>
     );
 }
